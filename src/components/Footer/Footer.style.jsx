@@ -41,6 +41,7 @@ export const StyledSocialsContainer = styled.div`
 export const StyledSocialIcon = styled.span`
   & :first-child {
     color: var(--white);
+    cursor: pointer;
   }
 `;
 
