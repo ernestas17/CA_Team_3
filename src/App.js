@@ -1,4 +1,4 @@
-import "./App.css";
+import "./utilities/resets.css";
 
 // Components
 
