@@ -4,20 +4,29 @@ import "../../utilities/variables.css";
 export const StyledHeader = styled.header`
   max-width: 1280px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   margin: auto;
+
+  & span {
+    width: 20%;
+    font-size: 20px;
+    font-weight: 800;
+  }
 `;
 
 export const StyledUl = styled.ul`
   display: flex;
   align-items: center;
-  gap: 32px;
   height: 90px;
   margin: auto;
   & li {
     font-size: 16px;
-    margin-left: 8px;
+    margin-left: 40px;
     font-weight: 600;
+  }
+  &nav {
+    width: 80%;
   }
 `;
 
@@ -34,12 +43,20 @@ export const IconWrapper = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const Icon = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 14px;
+
+  border-radius: 50px;
+
+  margin: 0 14px;
+  background-color: var(--mint);
+
+  height: 40px;
+  width: 40px;
 `;
 
 export const PhoneNumber = styled.p`
@@ -49,4 +66,11 @@ export const PhoneNumber = styled.p`
 
 export const RoadAssitance = styled.p`
   font-weight: 500;
+`;
+
+export const Span = styled.span`
+  & :first-child {
+    color: white;
+    padding-left: 9px;
+  }
 `;

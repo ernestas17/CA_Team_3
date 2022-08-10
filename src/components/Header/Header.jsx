@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquarePhone } from "@fortawesome/free-solid-svg-icons";
 
 import {
   StyledHeader,
@@ -12,12 +10,13 @@ import {
   Icon,
   PhoneNumber,
   RoadAssitance,
+  Span,
 } from "./Header.style";
 
 const Header = () => {
   return (
     <StyledHeader>
-      <div></div>
+      <span>{"{finsweet"}</span>
       <nav>
         <StyledUl>
           <li>
@@ -38,18 +37,18 @@ const Header = () => {
           <li>
             <StyledDivSeperator></StyledDivSeperator>
           </li>
-          <li>
-            <Wrapper>
-              <Icon>
-                <FontAwesomeIcon icon={faSquarePhone} />
-              </Icon>
+          <Wrapper>
+            <Icon>
+              <Span>
+                <i class="fa-solid fa-phone"></i>
+              </Span>
+            </Icon>
 
-              <IconWrapper>
-                <RoadAssitance>Road Assistance</RoadAssitance>
-                <PhoneNumber>1800 265 24 52</PhoneNumber>
-              </IconWrapper>
-            </Wrapper>
-          </li>
+            <IconWrapper>
+              <RoadAssitance>Road Assistance</RoadAssitance>
+              <PhoneNumber>1800 265 24 52</PhoneNumber>
+            </IconWrapper>
+          </Wrapper>
         </StyledUl>
       </nav>
     </StyledHeader>
