@@ -1,8 +1,9 @@
 import "./App.css";
 import "./utilities/resets.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer";
 
 import {
   AboutUsPageComponent,
@@ -11,7 +12,6 @@ import {
   ServicesPageComponent,
   HomePageComponent,
 } from "./layout/Layout";
-
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
         <Route path="blog" element={<BlogPageComponent />} />
         <Route path="contact" element={<ContactPageComponent />} />
       </Routes>
+      <Footer />
     </>
   );
 }

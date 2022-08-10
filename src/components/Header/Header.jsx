@@ -40,7 +40,7 @@ const Header = () => {
           <Wrapper>
             <Icon>
               <Span>
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
               </Span>
             </Icon>
 
