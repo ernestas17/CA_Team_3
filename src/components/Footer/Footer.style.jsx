@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import "../../utilities/variables.css";
 
 export const StyledFooter = styled.footer`
-  background-color: #1e1b1b;
+  background-color: var(--black);
 `;
 
 // Contact section
@@ -20,8 +21,8 @@ export const StyledSocialsWrapper = styled.div`
   flex-direction: column;
 `;
 export const StyledSocialsTitle = styled.h3`
-  font-size: 32px;
-  color: #ffffff;
+  font-size: var(--title1);
+  color: var(--white);
 
   padding-bottom: 64px;
   max-width: 320px;
@@ -38,16 +39,16 @@ export const StyledSocialsContainer = styled.div`
 `;
 
 export const StyledSocialIcon = styled.span`
-  color: #ffffff;
+  color: var(--white);
 `;
 
 export const StyledPrimaryParagraph = styled.p`
-  font-size: 20px;
+  font-size: var(--paragraph1-text-size);
   font-weight: 600;
 
   padding-bottom: 2em;
 
-  color: #ffffff;
+  color: var(--white);
 
   @media screen and (min-width: 1024px) {
     font-size: 24px;
@@ -55,7 +56,7 @@ export const StyledPrimaryParagraph = styled.p`
 `;
 
 export const StyledSecondaryParagraph = styled.p`
-  font-size: 16px;
+  font-size: var(--paragraph2-text-size);
   font-weight: 600;
 
   padding-bottom: 0.5em;
@@ -63,7 +64,7 @@ export const StyledSecondaryParagraph = styled.p`
   color: #646363;
 
   @media screen and (min-width: 1024px) {
-    font-size: 18px;
+    font-size: var(--paragraph1-text-size);
   }
 `;
 
