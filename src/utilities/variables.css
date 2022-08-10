@@ -1,0 +1,29 @@
+:root {
+  /* Headings */
+  --HeadingH1: 64px;
+  --HeadingH2: 58px;
+  --HeadingH3: 48px;
+  --HeadingH4: 40px;
+  --HeadingH5: 32px;
+  --HeadingH6: 20px;
+  /* Paragraph body */
+  --paragraph1-text-size: 18px;
+  --paragraph2-text-size: 16px;
+  --caption-text-size: 12px;
+  /* Titles */
+  --title1: 32px;
+  --title2: 24px;
+  /* Color pallete */
+  --black: #1e1b1b;
+  --orange: #ff6433;
+  --purple: #661ce7;
+  --mint: #00d289;
+  --dark-gray: #e2e6e9;
+  --light-gray: #f2f2f2;
+  /* For button */
+  --button-padding: 16px 40px 16px 40px;
+  --button-width: 139px;
+  --button-height: 64px;
+  --radius: 12px;
+  --button-text-size: 18px;
+}
