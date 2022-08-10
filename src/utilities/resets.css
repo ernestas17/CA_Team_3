@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Manrope", sans-serif;
+  color: var(--black);
 }
 
 body {
