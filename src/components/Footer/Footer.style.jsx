@@ -39,7 +39,9 @@ export const StyledSocialsContainer = styled.div`
 `;
 
 export const StyledSocialIcon = styled.span`
-  color: var(--white);
+  & :first-child {
+    color: var(--white);
+  }
 `;
 
 export const StyledPrimaryParagraph = styled.p`
@@ -72,4 +74,40 @@ export const StyledSecondaryParagraph = styled.p`
 
 export const StyledNavigationWrapper = styled.section`
   height: 157px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+
+  & span {
+    width: 20%;
+    font-size: 20px;
+    font-weight: 800;
+
+    color: var(--white);
+  }
+`;
+
+export const StyledUl = styled.ul`
+  display: flex;
+  align-items: center;
+  height: 90px;
+  margin: auto;
+  gap: 24px;
+  & li {
+    & :first-child {
+      color: var(--white);
+    }
+  }
+  &nav {
+    width: 80%;
+  }
+  @media screen and (min-width: 1024px) {
+    gap: 36px;
+  }
+`;
+
+export const StyledCopyrightText = styled.p`
+  color: #939191;
 `;

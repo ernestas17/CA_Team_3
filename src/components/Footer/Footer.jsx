@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
   StyledFooter,
   StyledContactsWrapper,
@@ -7,6 +9,9 @@ import {
   StyledSocialIcon,
   StyledPrimaryParagraph,
   StyledSecondaryParagraph,
+  StyledNavigationWrapper,
+  StyledUl,
+  StyledCopyrightText,
 } from "./Footer.style";
 
 const Footer = () => {
@@ -45,6 +50,31 @@ const Footer = () => {
           </StyledPrimaryParagraph>
         </div>
       </StyledContactsWrapper>
+      <StyledNavigationWrapper>
+        <span>{"{finsweet"}</span>
+        <nav>
+          <StyledUl>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About us</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </StyledUl>
+        </nav>
+        <StyledCopyrightText>
+          @ Copyright Finsweet {new Date().getFullYear()}
+        </StyledCopyrightText>
+      </StyledNavigationWrapper>
     </StyledFooter>
   );
 };
