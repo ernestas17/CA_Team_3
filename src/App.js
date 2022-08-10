@@ -14,7 +14,7 @@ import {
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <Routes>
         <Route index element={<HomePageComponent />} />
@@ -23,7 +23,7 @@ function App() {
         <Route path="blog" element={<BlogPageComponent />} />
         <Route path="contact" element={<ContactPageComponent />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
