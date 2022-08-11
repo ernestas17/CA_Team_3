@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "../../components/Card/Card";
+import FAQSection from "./FAQSection/FAQSection";
 
 const HomePage = () => {
   return (
     <div>
-      <Card text="Test" icon="icon"></Card>
+      <FAQSection></FAQSection>
     </div>
   );
 };
