@@ -1,9 +1,9 @@
-import "./App.css";
-import "./utilities/resets.css";
-import { Routes, Route } from "react-router-dom";
+import './App.css';
+import './utilities/resets.css';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer";
+import Header from './components/Header/Header';
+import Footer from './components/Footer';
 
 import {
   AboutUsPageComponent,
@@ -11,8 +11,11 @@ import {
   ContactPageComponent,
   ServicesPageComponent,
   HomePageComponent,
-} from "./layout/Layout";
+} from './layout/Layout';
 function App() {
+  const location = useLocation();
+  const isContactPage = location.pathname === '/contact';
+
   return (
     <>
       <Header />
@@ -23,7 +26,7 @@ function App() {
         <Route path="blog" element={<BlogPageComponent />} />
         <Route path="contact" element={<ContactPageComponent />} />
       </Routes>
-      <Footer />
+      {!isContactPage && <Footer />}
     </>
   );
 }
