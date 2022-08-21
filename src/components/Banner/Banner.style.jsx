@@ -33,4 +33,30 @@ export const StyledBanner = styled.div`
       line-height: 31px;
     }
   }
+
+  @media (max-width: 976px) {
+    > div {
+      > h3 {
+        font-size: var(--HeadingH4);
+        line-height: 55px;
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    > div {
+      > h3 {
+        font-size: var(--HeadingH5);
+        line-height: 45px;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    height: 400px;
+    > div {
+      > h3 {
+        font-size: var(--HeadingH6);
+        line-height: 35px;
+      }
+    }
+  }
 `;
