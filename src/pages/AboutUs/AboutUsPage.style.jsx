@@ -19,7 +19,7 @@ export const StyledHeader = styled.div`
     }
   }
   .headerRight {
-    width: 733px;
+    width: 70%;
     height: 100%;
     padding: 4em;
 
