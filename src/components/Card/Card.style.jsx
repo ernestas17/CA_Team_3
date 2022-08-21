@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 export const StyledBox = styled.div`
-  width: 316px;
-  height: 232px;
-
   font-size: var(--title2);
   font-weight: 600;
 
@@ -15,6 +12,8 @@ export const StyledBox = styled.div`
   align-items: center;
 
   transition: 100ms;
+
+  gap: 16px;
 
   &:hover span {
     color: white;
